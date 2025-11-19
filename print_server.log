@@ -1,0 +1,45 @@
+2025-11-06 11:38:40,497 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.181:5000
+2025-11-06 11:38:40,497 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-06 11:39:51,629 - INFO - Test print completed
+2025-11-06 11:39:51,629 - INFO - 127.0.0.1 - - [06/Nov/2025 11:39:51] "GET /test HTTP/1.1" 200 -
+2025-11-06 11:51:04,389 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.181:5000
+2025-11-06 11:51:04,389 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-06 11:51:34,331 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.181:5000
+2025-11-06 11:51:34,331 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-06 11:51:50,121 - INFO - Test print completed
+2025-11-06 11:51:50,122 - INFO - 127.0.0.1 - - [06/Nov/2025 11:51:50] "GET /test HTTP/1.1" 200 -
+2025-11-19 10:16:19,518 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.181:5000
+2025-11-19 10:16:19,519 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-19 10:17:57,462 - INFO - Test print completed
+2025-11-19 10:17:57,463 - INFO - 127.0.0.1 - - [19/Nov/2025 10:17:57] "GET /test HTTP/1.1" 200 -
+2025-11-19 10:19:41,708 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.181:5000
+2025-11-19 10:19:41,710 - INFO - [33mPress CTRL+C to quit[0m
+2025-11-19 10:23:54,140 - INFO - 127.0.0.1 - - [19/Nov/2025 10:23:54] "GET /health HTTP/1.1" 200 -
+2025-11-19 10:24:47,093 - INFO - 127.0.0.1 - - [19/Nov/2025 10:24:47] "GET /health HTTP/1.1" 200 -
+2025-11-19 10:25:05,444 - INFO - Print job received: {'text': 'Just a test', 'header': 'Hey', 'bold': False, 'align': 'left', 'cut': True}
+2025-11-19 10:25:05,488 - INFO - Print job completed successfully
+2025-11-19 10:25:05,489 - INFO - 127.0.0.1 - - [19/Nov/2025 10:25:05] "POST /print HTTP/1.1" 200 -
+2025-11-19 10:25:23,851 - INFO - Print job received: {'text': 'Just a test\n\n\n.', 'header': 'Hey', 'bold': False, 'align': 'left', 'cut': True}
+2025-11-19 10:25:23,885 - INFO - Print job completed successfully
+2025-11-19 10:25:23,886 - INFO - 127.0.0.1 - - [19/Nov/2025 10:25:23] "POST /print HTTP/1.1" 200 -
+2025-11-19 10:25:36,790 - INFO - Print job received: {'text': 'Just a test\n\n\n.', 'header': 'Hey', 'bold': True, 'align': 'left', 'cut': True}
+2025-11-19 10:25:36,826 - INFO - Print job completed successfully
+2025-11-19 10:25:36,826 - INFO - 127.0.0.1 - - [19/Nov/2025 10:25:36] "POST /print HTTP/1.1" 200 -
+2025-11-19 10:28:30,162 - INFO - Print job received: {'text': 'asddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd\n\n\n\n', 'header': 'Bob', 'bold': False, 'align': 'left', 'cut': True}
+2025-11-19 10:28:30,200 - INFO - Print job completed successfully
+2025-11-19 10:28:30,201 - INFO - 127.0.0.1 - - [19/Nov/2025 10:28:30] "POST /print HTTP/1.1" 200 -

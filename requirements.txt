@@ -1,0 +1,7 @@
+flask
+python-escpos[win32]
+pywin32
+python-dotenv
+Pillow
+streamlit
+requests
