@@ -1,0 +1,23 @@
+[Unit]
+Description=Thermal Print API Server
+After=tailscaled.service network-online.target
+Requires=tailscaled.service
+
+[Service]
+Type=simple
+User=printapi
+Group=printapi
+SupplementaryGroups=lp
+WorkingDirectory=/opt/print-api
+ExecStart=/opt/print-api/venv/bin/python /opt/print-api/server.py
+Restart=on-failure
+RestartSec=5
+WatchdogSec=60
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+DeviceAllow=/dev/usb/lp0 rw
+ReadWritePaths=/opt/print-api
+
+[Install]
+WantedBy=multi-user.target

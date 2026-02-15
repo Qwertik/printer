@@ -1,0 +1,9 @@
+{{ header | default("RECEIPT") }}
+{{ "=" * 32 }}
+{% for item in items %}
+{{ "%-24s %7s" | format(item.name, item.price) }}
+{% endfor %}
+{{ "-" * 32 }}
+{{ "%-24s %7s" | format("TOTAL", total) }}
+
+{{ footer | default("Thank you!") }}

@@ -1,0 +1,12 @@
+# Thermal printer udev rules
+# Replace XXXX and YYYY with actual vendor/product IDs from `lsusb`
+#
+# To find your IDs:
+#   1. Plug in the printer
+#   2. Run: lsusb
+#   3. Find the line for your printer (e.g. "Bus 001 Device 004: ID 0416:5011 ...")
+#   4. Replace XXXX with the vendor ID and YYYY with the product ID
+#
+SUBSYSTEM=="usbmisc", ATTRS{idVendor}=="XXXX", ATTRS{idProduct}=="YYYY", \
+  SYMLINK+="thermalprinter", TAG+="systemd", \
+  ENV{SYSTEMD_WANTS}+="print-api.service", MODE="0660", GROUP="lp"
